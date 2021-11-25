@@ -11,6 +11,3 @@ export interface CountryResponse{
     lastUpdate: string;
 }
 
-export interface CountryResponseArr{
-    countryresp: CountryResponse[];
-}

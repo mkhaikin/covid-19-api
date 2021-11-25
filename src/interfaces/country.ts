@@ -1,4 +1,4 @@
-import { CountryResponseArr, CountryResponse } from "../types/ICountryResp";
+import { CountryResponse } from "../types/ICountryResp";
 
 export interface CountryState {
     result: null | CountryResponse[];

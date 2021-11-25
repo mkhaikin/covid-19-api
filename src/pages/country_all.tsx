@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import {AllCountriesData, countryDataReset} from '../store/action_creators/countrycall'
 import CountryResult from './country_result'

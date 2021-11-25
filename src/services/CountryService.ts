@@ -1,6 +1,6 @@
 import $api from '../http'
 import {AxiosResponse} from 'axios'
-import { CountryResponseArr, CountryResponse } from '../types/ICountryResp'
+import {  CountryResponse } from '../types/ICountryResp'
 import config from '../config/config'
 
 export default class CountryService {
