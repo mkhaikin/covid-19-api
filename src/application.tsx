@@ -7,6 +7,7 @@ import CountryCode from './pages/country_code';
 import CountryName from './pages/country_name';
 import Report from './pages/report';
 import Help from './pages/help';
+import Total from './pages/total';
 
 const Application: React.FunctionComponent<{}> = props => {
 
@@ -24,6 +25,9 @@ const Application: React.FunctionComponent<{}> = props => {
                         <Link to="/report">Get Totals Report</Link>
                     </li>
                     <li>
+                        <Link to="/total">Get Total</Link>
+                    </li>
+                    <li>
                         <Link to="/help">Help</Link>
                     </li>
                 </ul>
@@ -37,6 +41,7 @@ const Application: React.FunctionComponent<{}> = props => {
                         <Route path="name" element={<CountryName/>}/>
                     </Route>
                     <Route path="/report" element={<Report/>} />
+                    <Route path="/total" element={<Total/>} />
                     <Route path="/help" element ={ <Help/>} />
                 </Routes>
             </div>
