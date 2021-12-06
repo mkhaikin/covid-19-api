@@ -8,9 +8,10 @@ import CountryName from './pages/country_name';
 import Report from './pages/report';
 import Help from './pages/help';
 import Total from './pages/total';
+import ReportTotals from './pages/reportTotals';
+import DailyReportByCountryName from './pages/dailyReportByCountryName';
 
-const Application: React.FunctionComponent<{}> = props => {
-
+const App: React.FunctionComponent<{}> = props => {
     return (
         <div className="App">
              <nav>
@@ -23,6 +24,12 @@ const Application: React.FunctionComponent<{}> = props => {
                     </li>              
                     <li>
                         <Link to="/report">Get Totals Report</Link>
+                    </li>
+                    <li>
+                        <Link to="/report/totals">Get Report Totals</Link>
+                    </li>
+                    <li>
+                        <Link to="/report/country/name">Get Daily Report By Coutry Name</Link>
                     </li>
                     <li>
                         <Link to="/total">Get Total</Link>
@@ -41,6 +48,8 @@ const Application: React.FunctionComponent<{}> = props => {
                         <Route path="name" element={<CountryName/>}/>
                     </Route>
                     <Route path="/report" element={<Report/>} />
+                    <Route path="/report/country/name" element={<DailyReportByCountryName/>} />
+                    <Route path="/report/totals" element={<ReportTotals/>} />
                     <Route path="/total" element={<Total/>} />
                     <Route path="/help" element ={ <Help/>} />
                 </Routes>
@@ -49,4 +58,4 @@ const Application: React.FunctionComponent<{}> = props => {
     )
 }
 
-export default Application;
+export default App;

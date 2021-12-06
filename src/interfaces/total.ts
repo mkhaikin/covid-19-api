@@ -10,7 +10,6 @@ export enum TotalActionTypes{
     FETCH_TOTAL = 'FETCH_TOTAL',
     FETCH_TOTAL_SUCCESS = 'FETCH_TOTAL_SUCCESS',
     FETCH_TOTAL_ERROR = 'FETCH_TOTAL_ERROR',
-
     RESET = 'RESET'
 }
 
@@ -28,7 +27,6 @@ interface FetchTotalErrorAction{
     payload: string;
 }
 
-///////////////////////////
 interface TotalActionReset{
     type: TotalActionTypes.RESET;
 }

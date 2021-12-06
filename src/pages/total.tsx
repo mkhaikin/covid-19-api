@@ -5,7 +5,6 @@ import TotalResult from './total_result'
 import {useTypesSelector} from "../hooks/useTypesSelector";
 import {TotalResponse} from '../types/ITotalResp'
 
-
 const TotalPage: React.FunctionComponent = props => {
     const dispatch = useDispatch()
     const {result, error, loading} = useTypesSelector(state => state.total)

@@ -1,6 +1,6 @@
 import $api from '../http'
-import {AxiosResponse} from 'axios'
-import {  TotalResponse } from '../types/ITotalResp'
+import { AxiosResponse } from 'axios'
+import { TotalResponse } from '../types/ITotalResp'
 import config from '../config/config'
 
 export default class TotalService {

@@ -1,4 +1,4 @@
-import {TotalState, TotalActionTypes, TotalAction} from "../../interfaces/total"
+import { TotalState, TotalActionTypes, TotalAction } from "../../interfaces/total"
 
 const initialState: TotalState = {
     result: null,
@@ -14,10 +14,8 @@ export const totalReducer = (state = initialState, action: TotalAction): TotalSt
             return {...state, loading: false, result: action.payload}
         case TotalActionTypes.FETCH_TOTAL_ERROR:
             return {...state, loading: false, error: action.payload}  
-
         case TotalActionTypes.RESET:
             return initialState          
-
         default:
             return state;
     }
