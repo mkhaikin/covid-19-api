@@ -6,6 +6,7 @@ const config = {
         requestCountryByCodeURL: "/country/code?format=json&code=",
         requestHelp: "/help/countries?format=json",
         requestReportTotals : "/report/totals?date-format=DD-MM-YYYY&format=json",
+        requestDailyReportByCountryCode:"/report/country/code?format=json",
         requestDailyReportByCountryName:"/report/country/name?format=json",
         requestTotal: "/totals?format=json",
     }
