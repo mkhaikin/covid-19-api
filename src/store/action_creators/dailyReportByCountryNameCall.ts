@@ -12,13 +12,12 @@ export const dailyReportByCountryName = (name:string, dateFormat:string, date:st
               console.log("No reports for this date")
                dispatch( {type: DailyReportByCountryNameActionTypes.FETCH_DAILY_REPORT_ERROR, payload: "Error, No data in DB !"})
           }
-           
-          const cres : DailyReportByCountryName[] = response.data            
-          console.log("Totals, cres: " + cres)
-          Object.entries(cres).forEach(([key, value]) => {
-              console.log(key, value);
-          });
-         
+        // Test Manually
+        //   const cres : DailyReportByCountryName[] = response.data            
+        //   console.log("Totals, cres: " + cres)
+        //   Object.entries(cres).forEach(([key, value]) => {
+        //       console.log(key, value);
+        //   });
           dispatch({type: DailyReportByCountryNameActionTypes.FETCH_DAILY_REPORT_SUCCESS, payload: response.data})
       } catch (e) {
           console.log("Totals: " + e)
